@@ -4,7 +4,8 @@ public class Maze {
 
 
     int[][] matrix;
-    int[][] visited;
+  //avoid cyclic traversing of the path by marking the cell as visited.
+     int[][] visited;
     int length=0;
 
     public int getShortLengthPath() {
@@ -30,7 +31,7 @@ public class Maze {
         visit(start[0],start[1]);
     }
 
-    //Function to visit a cell and recursively move to next cell
+    //Function to visit a cell and recursively move to next cell using BackTracking
     private void visit(int x, int y){
 
         //Base condition
@@ -72,6 +73,7 @@ public class Maze {
     }
 
     //Function check if (x,y) is a valid cell
+    //The canVisit(int x, int y) function checks whether the current cell is valid or not. We use this function to validate the moves.
     private boolean canVisit(int x, int y){
 
         //Check boundaries
