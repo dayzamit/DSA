@@ -8,7 +8,7 @@ public class GkpcUsingRecursion {
 
     public static void main(String[] args) {
 
-        System.out.println(getKpCom("678"));
+        System.out.println(getKpCom("23"));
     }
 
     static String[] codes = {".;", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tu", "vwx","yz"};
