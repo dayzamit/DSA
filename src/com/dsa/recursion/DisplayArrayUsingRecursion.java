@@ -17,7 +17,7 @@ public class DisplayArrayUsingRecursion {
         if(idx==arry.length)
         return;
         System.out.println(arry[idx]);
-        displayArray(arry,idx); // Recursive call
+        displayArray(arry,idx+1); // Recursive call
 
     }
 
