@@ -30,10 +30,10 @@ public class GetSubsequanceUsingRecursion {
             return bal;
         }
 
-        char fc = str.charAt(0); //a
-        String ros = str.substring(1); //bc
+        char fc = str.charAt(0); //a 1stmt
+        String ros = str.substring(1); //bc 2stmt
 
-        List<String> ras = getSubString(ros); //bc
+        List<String> ras = getSubString(ros); //bc 3stmt
 
         List mres = new ArrayList();
 

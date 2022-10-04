@@ -13,7 +13,11 @@ public class AESBLDir {
 
     public static void main(String[] args) {
 
-        twoDMatrixSpiralForm();
+        //twoDMatrixSpiralForm();
+
+       final Customer customer= new Customer("Amit");
+
+        System.out.println(customer.getCustName());
     }
 
 

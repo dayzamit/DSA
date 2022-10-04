@@ -9,8 +9,11 @@ public class FindMaximumOfArray {
     }
 
     public static int maxDisplay(int[] arry, int idx) {
+
+        //Base condition
         if (idx == arry.length - 1)
             return arry[idx];
+
         int misa = maxDisplay(arry, idx + 1);
         if (misa > arry[idx])
             return misa;
